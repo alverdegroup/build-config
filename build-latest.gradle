@@ -1,0 +1,5 @@
+apply from: file('/Users/juanetalvarez/workspace-governance/build-config/general/general-latest.gradle')
+apply from: file('/Users/juanetalvarez/workspace-governance/build-config/repository/read-repo.gradle')
+apply from: file('/Users/juanetalvarez/workspace-governance/build-config/jacoco/jacoco-latest.gradle')
+apply from: file('/Users/juanetalvarez/workspace-governance/build-config/checkstyle/checkstyle-latest.gradle')
+apply from: file('/Users/juanetalvarez/workspace-governance/build-config/spotbugs/spotbugs-latest.gradle')

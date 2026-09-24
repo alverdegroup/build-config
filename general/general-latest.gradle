@@ -1,0 +1,27 @@
+compileJava {options.encoding = 'UTF-8'}
+compileTestJava {options.encoding = 'UTF-8'}
+javadoc {options.encoding = 'UTF-8'}
+
+testing {
+    suites {
+        test {
+            useJUnitJupiter()
+        }
+        integrationTest(JvmTestSuite) {
+            dependencies {
+                implementation project()
+            }
+            targets {
+                all {
+                    testTask.configure {
+                        shouldRunAfter(test)
+                    }
+                }
+            }
+        }
+    }
+}
+
+javadoc {
+    failOnError = false
+}

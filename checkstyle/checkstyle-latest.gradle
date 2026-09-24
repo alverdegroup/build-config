@@ -1,0 +1,6 @@
+checkstyle {
+    sourceSets = [project.sourceSets.main]
+    configFile = file("/Users/juanetalvarez/workspace-governance/build-config/checkstyle/checkstyle.xml")
+    toolVersion '14.0.0'
+    maxWarnings = 0
+}
