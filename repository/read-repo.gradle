@@ -1,0 +1,12 @@
+repositories {
+    maven {
+        // Points to your local Artifactory virtual/gradle repository
+        url = uri("http://localhost:8082/artifactory/libs-release/")
+        allowInsecureProtocol = true
+        name "JFrog Artifactory"
+        credentials {
+            username = "cidependencies"
+            password = "$System.env.ALVERDE_DEPENDENCIES_READ_TOKEN"
+        }
+    }
+}
