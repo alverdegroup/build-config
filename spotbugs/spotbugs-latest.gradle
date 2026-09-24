@@ -6,8 +6,22 @@ spotbugs {
 }
 
 tasks.named("spotbugsMain") {
+    reports.create("xml") {
+        required.set(true)
+        outputLocation.set(layout.buildDirectory.file("reports/spotbugs/main.xml"))
+    }
+}
+
+tasks.register("spotbugsMainHtml") {
+    sourceDirs.from(tasks.named("spotbugsMain").map { it.sourceDirs })
+    classDirs.from(tasks.named("spotbugsMain").map { it.classDirs })
+    auxClassPaths.from(tasks.named("spotbugsMain").map { it.auxClassPaths })
     reports.create("html") {
         required.set(true)
         outputLocation.set(layout.buildDirectory.file("reports/spotbugs/main.html"))
     }
+}
+
+tasks.named("spotbugsMain") {
+    dependsOn("spotbugsMainHtml")
 }
