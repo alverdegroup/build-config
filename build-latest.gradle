@@ -1,5 +1,5 @@
-apply from: file('/Users/juanetalvarez/workspace-governance/build-config/general/general-latest.gradle')
-apply from: file('/Users/juanetalvarez/workspace-governance/build-config/repository/read-repo.gradle')
-apply from: file('/Users/juanetalvarez/workspace-governance/build-config/jacoco/jacoco-latest.gradle')
-apply from: file('/Users/juanetalvarez/workspace-governance/build-config/checkstyle/checkstyle-latest.gradle')
-apply from: file('/Users/juanetalvarez/workspace-governance/build-config/spotbugs/spotbugs-latest.gradle')
+apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/general/general-latest.gradle"
+apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/repository/read-repo.gradle"
+apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/jacoco/jacoco-latest.gradle"
+apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/checkstyle/checkstyle-latest.gradle"
+apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/spotbugs/spotbugs-latest.gradle"

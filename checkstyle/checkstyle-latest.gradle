@@ -1,6 +1,6 @@
 checkstyle {
     sourceSets = [project.sourceSets.main]
-    configFile = file("/Users/juanetalvarez/workspace-governance/build-config/checkstyle/checkstyle.xml")
+    configFile = resources.text.fromUri("https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/checkstyle/checkstyle.xml")
     toolVersion '14.0.0'
     maxWarnings = 0
 }
