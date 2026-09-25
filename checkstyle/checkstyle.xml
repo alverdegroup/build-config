@@ -149,7 +149,16 @@
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
     <module name="FallThrough"/>
-    <module name="HiddenField"/>
+    <module name="HiddenField">
+      <!-- Ignores parameters in constructor methods (e.g., public MyClass(String field)) -->
+      <property name="ignoreConstructorParameter" value="true"/>
+      
+      <!-- Ignores parameters in void setter methods (e.g., public void setField(String field)) -->
+      <property name="ignoreSetter" value="true"/>
+      
+      <!-- Also ignores setters that return the class itself (useful for builder patterns) -->
+      <property name="setterCanReturnItsClass" value="true"/>
+    </module>
     <module name="IllegalInstantiation"/>
     <module name="InnerAssignment"/>
     <module name="MagicNumber"/>
