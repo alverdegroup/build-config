@@ -23,7 +23,8 @@ testing {
 }
 
 cyclonedxBom {
-    includeConfigs = ["runtimeClasspath"]
+    setFormat("json")
+    setOutputName("bom")
 }
 
 javadoc {
