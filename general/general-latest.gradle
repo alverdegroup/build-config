@@ -22,11 +22,6 @@ testing {
     }
 }
 
-cyclonedxBom {
-    setFormat("json")
-    setOutputName("bom")
-}
-
 javadoc {
     failOnError = false
 }
