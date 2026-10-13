@@ -8,11 +8,11 @@ spotbugs {
 
 tasks.named('spotbugsMain') {
     reports.create("xml") {
-        required =true
+        required = true
         outputLocation = layout.buildDirectory.file("reports/spotbugs/main.xml")
     }
     reports.create("html") {
-        required.set(true)
+        required = true
         outputLocation = layout.buildDirectory.file("reports/spotbugs/main.html")
     }
 }
