@@ -6,7 +6,7 @@ spotbugs {
     reportLevel = "DEFAULT"
 }
 
-tasks.spotbugsMain {
+tasks.named('spotbugsMain') {
     reports.create("xml") {
         required =true
         outputLocation = layout.buildDirectory.file("reports/spotbugs/main.xml")
