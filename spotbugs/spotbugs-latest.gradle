@@ -1,17 +1,18 @@
 spotbugs {
+    toolVersion = '4.10.4'
     ignoreFailures = false
     showProgress = true
     effort = "MAX"
     reportLevel = "DEFAULT"
 }
 
-tasks.named("spotbugsMain") {
+tasks.spotbugsMain {
     reports.create("xml") {
-        required.set(true)
-        outputLocation.set(layout.buildDirectory.file("reports/spotbugs/main.xml"))
+        required =true
+        outputLocation = layout.buildDirectory.file("reports/spotbugs/main.xml")
     }
     reports.create("html") {
         required.set(true)
-        outputLocation.set(layout.buildDirectory.file("reports/spotbugs/main.html"))
+        outputLocation = layout.buildDirectory.file("reports/spotbugs/main.html")
     }
 }
