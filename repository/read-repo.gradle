@@ -1,8 +1,5 @@
 repositories {
     maven {
-        url "https://confluent.io"
-    }
-    maven {
         // Points to your local Artifactory virtual/gradle repository
         url = uri("http://localhost:8082/artifactory/libs-release/")
         allowInsecureProtocol = true
@@ -11,5 +8,9 @@ repositories {
             username = "cidependencies"
             password = "$System.env.ALVERDE_DEPENDENCIES_READ_TOKEN"
         }
+    }
+
+    maven {
+        url = uri("https://packages.confluent.io/maven/")
     }
 }
