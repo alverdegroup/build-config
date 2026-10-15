@@ -9,8 +9,4 @@ repositories {
             password = "$System.env.ALVERDE_DEPENDENCIES_READ_TOKEN"
         }
     }
-
-    maven {
-        url = uri("https://packages.confluent.io/maven/")
-    }
 }
