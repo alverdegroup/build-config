@@ -2,4 +2,3 @@ apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/he
 apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/repository/read-repo.gradle"
 apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/jacoco/jacoco-latest.gradle"
 apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/checkstyle/checkstyle-latest.gradle"
-apply from: "https://raw.githubusercontent.com/alverdegroup/build-config/refs/heads/main/spotbugs/spotbugs-latest.gradle"
